@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saliva is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="vendors/css/ionicons.min.css">
@@ -12,6 +13,17 @@
     <link rel="stylesheet" href="ressources/css/style.css">
     <link rel="stylesheet" href="ressources/css/queries.css">
     <title>Saliva food</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/ressources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ressources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ressources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/ressources/favicons/manifest.json">
+    <link rel="mask-icon" href="/ressources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/ressources/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/ressources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
 </head>
 
 <body>
@@ -308,68 +320,72 @@
         </div>
     </section>
 
-    <section class="section-form">
-        <div class="row">
-            <h2>We're happy to hear from you</h2>
-        </div>
-        <div class="row">
-            <form method="post" action="#" class="contact-form">
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="name">Name</label>
+    <div class="map-box">
+        <div class="map"></div>
+
+        <div class="form-box">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="email" name="email" id="email" placeholder="Your email" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>How did you find us ?</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <select name="find-us" id="find-us">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>How did you find us ?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
                             <option value="friends" selected >Friends</option>
                             <option value="search">Search engine</option>
                             <option value="ad">Advertissements</option>
                             <option value="other">Other</option>
                         </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Newsletter</label>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" checked> Yes, please
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <input type="checkbox" name="news" checked> Yes, please
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="message">Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" cols="30" id="message" rows="10" placeholder="Your message"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="message">Drop us a line</label>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it">
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="message" cols="30" id="message" rows="10" placeholder="Your message"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>&nbsp;</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="submit" value="Send it">
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-    </section>
+    </div>
 
     <footer>
         <div class="row">
@@ -402,8 +418,10 @@
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
     <script src="vendors/javascript/jquery.waypoints.min.js"></script>
     <script src="ressources/javascript/script.js"></script>
+    <script src="vendors/javascript/gmaps.js"></script>
 </body>
 
 </html>
